@@ -16,7 +16,7 @@ func SetupRouter() *gin.Engine {
 	user := r.Group("/user")
 	{
 		user.GET("/getUser", controllers.GetUser2)
-		user.GET("getUser/:nik", controllers.GetUserByNIK)
+// 		user.GET("getUser/:nik", controllers.GetUserByNIK)
 		user.POST("/insert", controllers.InsertUser)
 		user.PUT("update/:nik", controllers.UpdateUser)
 		user.DELETE("delete/:nik", controllers.DeleteUser)
