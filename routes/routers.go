@@ -19,7 +19,7 @@ func SetupRouter() *gin.Engine {
 		user.GET("getUser/:nik", controllers.GetUserByNIK)
 		user.POST("/insert", controllers.InsertUser)
 		user.PUT("update/:nik", controllers.UpdateUser)
-	.DELETE("delete/:nik", controllers.DeleteUser)
+		user.DELETE("delete/:nik", controllers.DeleteUser)
 		user.POST("/login", controllers.LoginUser)
 		user.POST("/signup", controllers.SignUpUser)
 	}
