@@ -16,7 +16,7 @@ func SetupRouter() *gin.Engine {
 	user := r.Group("/user")
 	{
 		user.GET("/getUser", controllers.GetUser2)
-// 		user.GET("getUser/:nik", controllers.GetUserByNIK)
+		user.GET("getUser/:nik", controllers.GetUserByNIK)
 		user.POST("/insert", controllers.InsertUser)
 		user.PUT("update/:nik", controllers.UpdateUser)
 		user.DELETE("delete/:nik", controllers.DeleteUser)
@@ -28,7 +28,7 @@ func SetupRouter() *gin.Engine {
 		// pelamar.GET("/getPelamar", controllers.GetPelamar)
 		pelamar.GET("/getPelamar/:nik", controllers.GetPelamarsByNIK)
 		pelamar.DELETE("/delete/:nik", controllers.DeletePelamars)
-		// pelamar.PUT("update/", controllers.UpdatePelamars)
+		pelamar.PUT("update/", controllers.UpdatePelamars)
 		pelamar.POST("/insert", controllers.InsertPelamar)
 		pelamar.POST("/upload", controllers.UploadFoto)
 		pelamar.POST("/login", controllers.LoginPelamar)
