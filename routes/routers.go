@@ -40,8 +40,8 @@ func SetupRouter() *gin.Engine {
 		perusahaan.GET("/getPerusahaan", controllers.GetAllPerusahaans)
 		perusahaan.POST("/insert", controllers.InsertPerusahaan)
 		perusahaan.DELETE("/delete/:id", controllers.DeletePerusahaan)
-		perusahaanii.PUT("update/:id", controllers.UpdatePerusahaan)
-
+		perusahaan.PUT("update/:id", controllers.UpdatePerusahaan)
+		
 	}
 	return r
 }
