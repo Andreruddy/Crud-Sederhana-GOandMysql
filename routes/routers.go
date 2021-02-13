@@ -36,7 +36,7 @@ func SetupRouter() *gin.Engine {
 	}
 	perusahaan := r.Group("/perusahaan")
 	{
-		perusahaanss.GET("/getPerusahaan/:id", controllers.GetPerusahaanByID)
+		perusahaan.GET("/getPerusahaan/:id", controllers.GetPerusahaanByID)
 		perusahaan.GET("/getPerusahaan", controllers.GetAllPerusahaans)
 		perusahaan.POST("/insert", controllers.InsertPerusahaan)
 		perusahaan.DELETE("/delete/:id", controllers.DeletePerusahaan)
