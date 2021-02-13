@@ -28,7 +28,7 @@ func SetupRouter() *gin.Engine {
 		// pelamar.GET("/getPelamar", controllers.GetPelamar)
 		pelamar.GET("/getPelamar/:nik", controllers.GetPelamarsByNIK)
 		pelamar.DELETE("/delete/:nik", controllers.DeletePelamars)
-		pelamar.PUT("update/", controllers.UpdatePelamars)
+		// pelamar.PUT("update/", controllers.UpdatePelamars)
 		pelamar.POST("/insert", controllers.InsertPelamar)
 		pelamar.POST("/upload", controllers.UploadFoto)
 		pelamar.POST("/login", controllers.LoginPelamar)
